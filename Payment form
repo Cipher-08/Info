@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body
+{
+    margin: 15px 30px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    padding: 10px;
+  
+}
+.container
+{
+    background-color: #f8f2f2;
+
+    padding: 5px 10px 5px 10px;
+
+}
+
+
+input [type="text"],
+input [type="email"],
+input [type="number"],
+input [type="password"],
+input [type="date"],
+textarea
+{
+    width: 100%;
+    padding: 15px;
+    border: 0.5px solid #f8f2f2;
+    border-radius: 2px;
+    margin: 10px;
+}
+fieldset
+{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+}
+input[type="submit"]
+{
+    background-color: rgba(0, 0, 0, 0.048) !important;
+    font-family: cursive;
+    text-align: center;
+    color: rgb(0, 14, 14);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: grabs;
+    width: 100%;
+}
+input[type="submit"]:hover
+{
+    color: brown;
+
+}
+</style>
+    <title>Payment form </title>
+</head>
+<body>
+    <div class="container">
+
+    <h3 style="text-align: center;"><b>PAYMENT FORM</b></h3>
+    <hr>
+    <h3>::::USER INFORMATION::::</h3>
+    <p>Name*: <input type="text" placeholder="Saksham Awasthi" required></p>
+    <fieldset>
+    <p>Gender:</p>
+   Male <input type="radio" name="Male" id="">   Female <input type="radio" name="Female" id="">
+</fieldset>
+   
+   <p>
+       Adress::
+       <fieldset>
+       <textarea name="adress" id="adress" cols="170" rows="10" placeholder="Enter your adress"></textarea>
+       </textarea>
+    </fieldset>
+
+      
+    </p>
+    <p>
+        Email:
+        
+            <input type="email" name="email" id="" placeholder="Enter your Email!!">
+    </p>
+    <p>
+        Pincode:
+        <input type="number" name="" id="" placeholder="xxxxxx">
+    </p>
+    <h3 style="text-align: center;">PAYMENT  INFORMATION</h3>
+    <p>
+        Card Type:
+        <select name="" id="">
+        <option value="">---Select card type---</option>
+        <option value="">Visa</option>
+        <option value="">Mastercard</option>
+        <option value="">Rupay</option>
+    </select>
+    </p>
+    <p>
+        Card Number:
+        <input type="number" name="" id="" placeholder="1111-2222-3333">
+    </p>
+    <p>
+        Expiry Date :
+        <input type="date" name="" id="" placeholder="dd-mm-yyyy">
+    </p>
+    <p>
+        CVV:
+       <input type="password" name="" id="" placeholder="123">
+
+    </p>
+    <input type="submit" value="PAY NOW">
+
+</div>
+</body>
+</html>
